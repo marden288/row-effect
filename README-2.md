@@ -57,7 +57,7 @@ pip install -r python-app/requirements.txt
 
 ```bash
 cd python-app
-python main.py
+python run_local.py
 ```
 
 > **Nota sobre MediaPipe:** este proyecto usa la MediaPipe **Tasks API**
@@ -86,7 +86,7 @@ Filters/
 ├── web.css              Estilos de la version web
 ├── web.js               Camara y filtros de navegador
 └── python-app/
-    ├── main.py            Punto de entrada de la version local
+    ├── run_local.py       Punto de entrada de la version local
     ├── hand_tracking.py    Detección de dedos extendidos a partir de los landmarks
     ├── geometry.py          Geometría del portal y detección del gesto de cierre
     ├── filters.py           Definición de los filtros disponibles
