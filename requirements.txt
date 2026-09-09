@@ -1,0 +1,8 @@
+opencv-python
+mediapipe==0.10.35
+numpy
+
+# Nota: mediapipe==0.10.35 ya no expone mp.solutions.hands.
+# Este proyecto usa la MediaPipe Tasks API (mediapipe.tasks.python.vision.HandLandmarker),
+# disponible desde mediapipe>=0.10. El modelo hand_landmarker.task se descarga
+# automaticamente en el primer arranque (ver hand_tracking.py).
