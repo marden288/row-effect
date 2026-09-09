@@ -50,12 +50,13 @@ source venv/bin/activate   # macOS / Linux
 Instalar las dependencias:
 
 ```bash
-pip install -r requirements.txt
+pip install -r python-app/requirements.txt
 ```
 
 ## Uso
 
 ```bash
+cd python-app
 python main.py
 ```
 
@@ -81,12 +82,16 @@ permisos de camara. El programa Python original continua disponible para uso loc
 
 ```
 Filters/
-├── main.py            Punto de entrada: bucle de captura y ciclo de filtros
-├── hand_tracking.py    Detección de dedos extendidos a partir de los landmarks
-├── geometry.py          Geometría del portal y detección del gesto de cierre
-├── filters.py            Definición de los ocho filtros disponibles
-├── requirements.txt
-└── README.md
+├── index.html           Version web estatica para Vercel
+├── web.css              Estilos de la version web
+├── web.js               Camara y filtros de navegador
+└── python-app/
+    ├── main.py            Punto de entrada de la version local
+    ├── hand_tracking.py    Detección de dedos extendidos a partir de los landmarks
+    ├── geometry.py          Geometría del portal y detección del gesto de cierre
+    ├── filters.py           Definición de los filtros disponibles
+    ├── requirements.txt
+└── README-2.md
 ```
 
 ## Extender el proyecto
