@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Row Effect</title>
+    <link rel="stylesheet" href="./web.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">ROW EFFECT</p>
+        <h1>Open a portal into another world.</h1>
+        <p class="intro">Allow camera access, then switch the live portal filters below.</p>
+      </header>
+      <section class="stage" aria-label="Camera portal">
+        <video id="camera" autoplay playsinline muted></video>
+        <video id="portal" autoplay playsinline muted aria-hidden="true"></video>
+        <div id="portal-frame" class="portal-frame"></div>
+        <div id="message" class="message">Camera preview will appear here.</div>
+      </section>
+      <section class="controls">
+        <button id="start" class="primary">Enable camera</button>
+        <button id="previous" aria-label="Previous filter">←</button>
+        <div class="filter-info"><strong id="filter-name">Grid</strong><span id="filter-count">1 / 8</span></div>
+        <button id="next" aria-label="Next filter">→</button>
+      </section>
+      <p class="hint">Tip: use the arrows or swipe on the preview to change filters.</p>
+    </main>
+    <script src="./web.js"></script>
+  </body>
+</html>

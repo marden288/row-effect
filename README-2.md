@@ -70,6 +70,13 @@ python main.py
 
 Con la cámara activa, levanta ambas manos con el índice y el pulgar extendidos: el portal se genera automáticamente entre ellas. Acércalas para "cerrarlas" y avanzar al siguiente filtro de la lista. Presiona **`q`** con la ventana activa para finalizar la ejecución.
 
+## Version web para Vercel
+
+El repositorio incluye una version web estatica en `index.html`, `web.css` y `web.js`.
+En Vercel, importa este repositorio y usa la configuracion predeterminada; Vercel
+servira `index.html`. La version web usa la camara del navegador y necesita
+permisos de camara. El programa Python original continua disponible para uso local.
+
 ## Estructura del proyecto
 
 ```
